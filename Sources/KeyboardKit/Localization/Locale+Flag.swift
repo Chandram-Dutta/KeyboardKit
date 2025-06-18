@@ -63,6 +63,7 @@ public extension Locale {
         case .irish: "🇮🇪"
         
         case .italian: "🇮🇹"
+        case .japanese: "🇯🇵"
         case .kazakh: "🇰🇿"
         case .kurdish_sorani: "🇹🇯"
         case .kurdish_sorani_arabic: "🇹🇯"

@@ -26,6 +26,7 @@ public extension Locale {
             .georgian, .german, .german_austria, .german_switzerland, .greek,
             .hawaiian, .hebrew, .hungarian,
             .icelandic, .inari_sami, .indonesian, .irish, .italian,
+            .japanese,
             .kazakh, .kurdish_sorani, .kurdish_sorani_arabic, .kurdish_sorani_pc,
             .latvian, .lithuanian,
             .macedonian, .malay, .maltese, .mongolian,
@@ -93,6 +94,7 @@ public extension Locale {
     static var indonesian: Locale { .withId("id") }
     static var irish: Locale { .withId("ga_IE") }
     static var italian: Locale { .withId("it") }
+    static var japanese: Locale { .withId("ja") }
     static var kazakh: Locale { .withId("kk") }
     static var kurdish_sorani: Locale { .withId("ckb") }
     static var kurdish_sorani_arabic: Locale { .withId("ckb_IQ") }
@@ -179,6 +181,7 @@ public extension Locale {
         case .irish: "irish"
         
         case .italian: "italian"
+        case .japanese: "japanese"
         case .kazakh: "kazakh"
         case .kurdish_sorani: "kurdish_sorani"
         case .kurdish_sorani_arabic: "kurdish_sorani_arabic"
@@ -231,7 +234,7 @@ private extension Locale {
 
 #Preview {
     
-    let locale = Locale(identifier: "cv")
+    let locale = Locale(identifier: "ja")
     
     Text(locale.localizedName(in: .english) ?? "-")
 }
